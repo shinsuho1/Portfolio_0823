@@ -1,0 +1,417 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&family=Raleway:wght@100&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+li, ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  box-shadow: 0 0 16px 3px rgba(0, 0, 0, 0.15);
+}
+header .inner {
+  width: 1180px;
+  height: 80px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  bottom: -20px;
+  justify-content: space-between;
+}
+header .inner h1 a i {
+  font-size: 50px;
+  color: #6a88d8;
+}
+header .inner .menuWeb {
+  display: flex;
+}
+header .inner .menuWeb #gnb li {
+  float: left;
+}
+header .inner .menuWeb #gnb li a {
+  display: block;
+  padding: 14px 40px;
+  font: bold 16px/1 "Pretendard-Regular";
+  letter-spacing: 2px;
+  color: #6a88d8;
+}
+header .inner .menuWeb #toggleBtn {
+  margin-left: 14px;
+}
+header .inner .menuWeb #toggleBtn .toggleSwitch {
+  width: 140px;
+  height: 40px;
+  display: block;
+  position: relative;
+  border-radius: 30px;
+  background-color: #fff;
+  border: 1px solid #6a88d8;
+  box-shadow: 0 0 16px 3px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+header .inner .menuWeb #toggleBtn .toggleSwitch .toggleButton {
+  width: 60px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  transform: translateY(-50%);
+  border-radius: 100px;
+  background: #6a88d8;
+  transition: all 0.2s ease-in;
+  font: bold 18px/30px "Montserrats";
+  color: #fff;
+  text-align: center;
+}
+header .inner .menuWeb #toggleBtn #toggle:checked ~ .toggleSwitch {
+  background: #6a88d8;
+}
+header .inner .menuWeb #toggleBtn #toggle:checked ~ .toggleSwitch .toggleButton {
+  left: calc(100% - 64px);
+  background: #fff;
+}
+
+.main {
+  width: 100%;
+  height: 900px;
+  position: relative;
+  overflow: hidden;
+}
+.main .title {
+  position: absolute;
+  font-family: "Montserrat";
+  width: 1180px;
+  margin: 0 auto;
+  left: 50%;
+  top: 46%;
+  transform: translate(-50%, -50%);
+}
+.main .title h1 {
+  font-size: 50px;
+  margin: 0 auto;
+}
+.main .title h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 auto;
+}
+.main .title p {
+  margin-bottom: 40px;
+}
+.main .title .btn {
+  padding: 10px 20px;
+  background: #6384e1;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.main .title .icons {
+  width: 1180px;
+  height: 40px;
+  margin-top: 30px;
+  padding-left: 15px;
+}
+.main .title .icons a {
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin-right: 30px;
+}
+.main .title .icons a i {
+  font-size: 30px;
+  color: #6a88d8;
+}
+.main .title .icons a img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.main .square {
+  position: absolute;
+  width: 700px;
+  height: 1000px;
+  background: linear-gradient(to bottom, #6384e1, #5175d8, #6384e1);
+  transform: rotate(-45deg);
+  border-radius: 15px;
+  top: -200px;
+  right: -300px;
+}
+
+.news {
+  width: 100%;
+  padding: 150px 0px;
+}
+.news:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.news .main {
+  width: 1180px;
+  margin: 0 auto;
+}
+.news .main .title {
+  width: 100%;
+}
+.news .main .title h2 {
+  font: bold 30px/1.2 "Pretendard-Regular";
+  margin-bottom: 20px;
+}
+.news .main .title nav {
+  position: absolute;
+  right: 230px;
+  z-index: 3;
+}
+.news .main .title nav ul {
+  display: flex;
+}
+.news .main .title nav ul li a {
+  font-size: 40px;
+  color: #999;
+  margin-right: 30px;
+}
+.news .main .title nav ul li a:hover {
+  color: #000;
+}
+.news .main article {
+  width: 580px;
+  height: 400px;
+  float: left;
+  margin-right: 20px;
+  background-color: lightslategray;
+  border-radius: 20px;
+  padding: 20px 20px 40px 40px;
+  margin-top: 20px;
+  color: #fff;
+}
+.news .main article:last-child {
+  margin-right: 0px;
+}
+.news .main article > p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.news .main article > p i {
+  font-size: 90px;
+}
+.news .main article .human {
+  margin-top: 20px;
+  position: relative;
+}
+.news .main article .human img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+.news .main article .human ul {
+  position: absolute;
+  top: 25px;
+  display: inline;
+  margin-left: 20px;
+  letter-spacing: 1px;
+}
+.news .main article .human ul li:nth-of-type(1) {
+  font: bold 24px/1 "arial";
+}
+.news .main article .human ul li:nth-of-type(2) {
+  margin-top: 5px;
+  font: 18px/1 "arial";
+}
+
+.progream {
+  width: 100%;
+  height: 1000px;
+  background-color: rgba(81, 117, 216, 0.1);
+  padding: 150px 0px;
+  display: flex;
+}
+.progream .inner {
+  width: 1180px;
+  height: 550px;
+  overflow: hidden;
+  margin: 0px auto;
+  position: relative;
+}
+.progream .inner div.title {
+  width: 400px;
+  height: 100px;
+  position: absolute;
+  overflow: hidden;
+}
+.progream .inner div.title #title {
+  width: 600%;
+  float: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.progream .inner div.title #title li {
+  width: 400px;
+  height: 100%;
+  float: left;
+}
+.progream .inner div.title #title li h2 {
+  font: bold 30px "Pretendard-Regular";
+  color: #888;
+  margin-bottom: 10px;
+}
+.progream .inner div.title #title li h1 {
+  font: bold 40px "Pretendard-Regular";
+}
+.progream .inner div.title #title li.excel h1 {
+  color: #217345;
+}
+.progream .inner div.title #title li.powerpoint h1 {
+  color: #d24726;
+}
+.progream .inner div.title #title li.word h1 {
+  color: #185abd;
+}
+.progream .inner div.title #title li.access h1 {
+  color: #a4373a;
+}
+.progream .inner div.title #title li.teams h1 {
+  color: #444bb1;
+}
+.progream .inner div.title #title li.onedrive h1 {
+  color: #0678d3;
+}
+.progream .inner #slider {
+  width: 600%;
+  height: 100%;
+  float: left;
+  position: absolute;
+  top: 120px;
+}
+.progream .inner #slider li {
+  width: 1180px;
+  height: 100%;
+  float: left;
+}
+.progream .inner #slider li .pic {
+  width: 100%;
+  height: 100%;
+}
+.progream .inner #slider li .pic article {
+  width: 580px;
+  height: 400px;
+  float: left;
+  margin-right: 20px;
+  background-color: #fff;
+  padding: 40px;
+}
+.progream .inner #slider li .pic article h3 {
+  color: black;
+  font: bold 30px/1 "Pretendard-Regular";
+  margin-bottom: 13px;
+}
+.progream .inner #slider li .pic article p {
+  color: black;
+  font: 18px/1.2 "Pretendard-Regular";
+}
+.progream .inner #slider li .pic article p:nth-of-type(1) {
+  margin-bottom: 30px;
+}
+.progream .inner #slider li .pic article .btn {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.progream .inner #slider li .pic article .btn button {
+  background-color: #fff;
+  border-radius: 50px;
+  width: 200px;
+  height: 35px;
+  cursor: pointer;
+  font: 15px/35px "Pretendard-Regular";
+}
+.progream .inner #slider li .pic article .btn button:last-child {
+  color: #fff;
+}
+.progream .inner #slider li .pic article:last-child {
+  margin-right: 0px;
+}
+.progream .inner #slider li .pic article img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.progream .inner #slider li:last-child {
+  margin-right: 0px;
+}
+.progream .inner #slider li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.progream .inner #slider li .excel .pic article .btn button {
+  border: 1px solid #217345;
+}
+.progream .inner #slider li .excel .pic article .btn button:last-child {
+  background-color: #217345;
+}
+.progream .inner #slider li .word .pic article .btn button {
+  border: 1px solid #185abd;
+}
+.progream .inner #slider li .word .pic article .btn button:last-child {
+  background-color: #185abd;
+}
+.progream .inner #slider li .powerpoint .pic article .btn button {
+  border: 1px solid #d24726;
+}
+.progream .inner #slider li .powerpoint .pic article .btn button:last-child {
+  background-color: #d24726;
+}
+.progream .inner #slider li .access .pic article .btn button {
+  border: 1px solid #a4373a;
+}
+.progream .inner #slider li .access .pic article .btn button:last-child {
+  background-color: #a4373a;
+}
+.progream .inner #slider li .teams .pic article .btn button {
+  border: 1px solid #444bb1;
+}
+.progream .inner #slider li .teams .pic article .btn button:last-child {
+  background-color: #444bb1;
+}
+.progream .inner #slider li .onedrive .pic article .btn button {
+  margin-top: 20px;
+  border: 1px solid #0678d3;
+}
+.progream .inner #slider li .onedrive .pic article .btn button:last-child {
+  background-color: #0678d3;
+}
+.progream .inner .prev {
+  position: absolute;
+  top: 57.5%;
+  left: 0px;
+  color: #000;
+  font: 20px "arial";
+}
+.progream .inner .next {
+  position: absolute;
+  top: 57.5%;
+  right: 0px;
+  color: #000;
+  font: 20px "arial";
+}
+
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,251 @@
+.progream{
+    width: 100%;
+    height: 1000px; 
+    background-color: rgba($color: #5175d8, $alpha: 0.1);
+    padding: 150px 0px;
+    display: flex;
+    .inner{
+        width: 1180px;
+        height: 550px;
+        overflow: hidden;
+        margin: 0px auto;
+        position: relative;
+
+        div.title{
+            width: 400px;
+            height: 100px;
+            position: absolute;
+            overflow: hidden;
+            #title{
+                width: calc(100% * 6);
+                float: left;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 2;
+                li{
+                    width: 400px;
+                    height: 100%;
+                    float: left;
+                    h2{
+                        font: bold 30px "Pretendard-Regular";
+                        color: #888;
+                        margin-bottom: 10px;
+                    }
+                    h1{
+                        font: bold 40px "Pretendard-Regular";
+                    }
+
+                    &.excel{
+                        h1{
+                            color: #217345;
+                        }
+                    }
+                    &.powerpoint{
+                        h1{
+                            color: #d24726;
+                        }
+                    }
+                    &.word{
+                        h1{
+                            color: #185abd;
+                        }
+                    }
+                    &.access{
+                        h1{
+                            color: #a4373a;
+                        }
+                    }
+                    &.teams{
+                        h1{
+                            color: #444bb1;
+                        }
+                    }
+                    &.onedrive{
+                        h1{
+                            color: #0678d3;
+                        }
+                    }
+                }
+            }
+        }
+
+        #slider{
+            width: calc(100% * 6);
+            height: 100%;
+            float: left;
+            position: absolute;
+            top: 120px;
+                
+            li{
+                width: 1180px;
+                height: 100%;
+                float: left;
+                
+
+                .pic{
+                    width: 100%;
+                    height: 100%;
+                    
+                    article{
+                        width: 580px;
+                        height: 400px;
+                        float: left;
+                        margin-right: 20px;
+                        background-color: #fff;
+                        padding: 40px;
+                        h3{
+                            color:black;
+                            font: bold 30px/1 "Pretendard-Regular";
+                            margin-bottom: 13px;
+                        }
+                        p{
+                            color: black;
+                            font: 18px/1.2 "Pretendard-Regular";
+                            &:nth-of-type(1){
+                                margin-bottom: 30px;
+                            }
+                        }
+                        .btn{
+                            display: flex;
+                            justify-content:space-around;
+                            margin-top: 20px;
+                            button{
+                                background-color:#fff;
+                                border-radius: 50px;
+                                width: 200px;
+                                height: 35px;                                
+                                cursor: pointer;
+                                font: 15px/35px "Pretendard-Regular";
+                                &:last-child{
+                                    color: #fff;
+                                }
+                            }
+                        }
+
+                        &:last-child{
+                            margin-right: 0px;
+                        }
+                        img{
+                                width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+
+                &:last-child{
+                    margin-right: 0px;
+                }
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                .excel{
+                    .pic{
+                        article{
+                            .btn{
+                                button{
+                                    border: 1px solid #217345;
+                                    &:last-child{
+                                        background-color: #217345;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .word{
+                    .pic{
+                        article{
+                            .btn{
+                                button{
+                                    border: 1px solid #185abd;
+                                    &:last-child{
+                                        background-color:#185abd;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .powerpoint{
+                    .pic{
+                        article{
+                            .btn{
+                                button{
+                                    border: 1px solid #d24726;
+                                    &:last-child{
+                                        background-color: #d24726;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .access{
+                    .pic{
+                        article{
+                            .btn{
+                                button{
+                                    border: 1px solid #a4373a;
+                                    &:last-child{
+                                        background-color: #a4373a;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .teams{
+                    .pic{
+                        article{
+                            .btn{
+                                button{
+                                    border: 1px solid #444bb1;
+                                    &:last-child{
+                                        background-color: #444bb1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .onedrive{
+                    .pic{
+                        article{
+                            .btn{
+                                button{
+                                    margin-top: 20px;
+                                    border: 1px solid #0678d3;
+                                    &:last-child{
+                                        background-color: #0678d3;
+                                    } 
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .prev{
+            position: absolute;
+            top: 57.5%;
+            left: 0px;
+            color: #000;
+            font: 20px "arial";
+
+        }
+        .next{
+            position: absolute;
+            top: 57.5%;
+            right: 0px;
+            color: #000;
+            font: 20px "arial";
+        }
+    }
+}
